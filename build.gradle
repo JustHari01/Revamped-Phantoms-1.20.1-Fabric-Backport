@@ -1,0 +1,16 @@
+plugins {
+    id 'idea'
+    alias libs.plugins.mdg apply false
+    alias libs.plugins.opensesame apply false
+    alias cLibs.plugins.managedversioning
+    alias libs.plugins.architectury.loom apply false
+}
+
+managedVersioning {
+    versionFile.set project.file('version.properties')
+    metadataVersion.set libs.versions.minecraft
+}
+
+managedVersioning.apply()
+
+println "Building: $version"

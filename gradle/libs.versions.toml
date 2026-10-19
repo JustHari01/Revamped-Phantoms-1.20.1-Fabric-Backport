@@ -1,0 +1,30 @@
+[versions]
+minecraft = "1.20.1"
+parchment_minecraft = "1.20.1"
+parchment_mappings = "2023.09.03"
+
+fabric_loader = "0.16.10"
+fabric_api = "0.92.12+1.20.1"
+
+mdg = "2.0.0-beta.21"
+
+codecextras = "1.0.1"
+opensesame = "0.5.3"
+
+architectury_loom = "1.6.392"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+
+fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
+fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
+codecextras = { module = "dev.lukebemish:codecextras", version.ref = "codecextras" }
+opensesame_core = { module = "dev.lukebemish.opensesame:opensesame-core", version.ref = "opensesame" }
+opensesame_fabric = { module = "dev.lukebemish.opensesame:opensesame-fabric", version.ref = "opensesame" }
+
+[plugins]
+
+mdg = { id = "org.groovymc.modsdotgroovy", version.ref = "mdg" }
+architectury_loom = { id = "dev.architectury.loom", version.ref = "architectury_loom" }
+opensesame = { id = "dev.lukebemish.opensesame", version.ref = "opensesame" }
+opensesame_loom = { id = "dev.lukebemish.opensesame.loom", version.ref = "opensesame" }
